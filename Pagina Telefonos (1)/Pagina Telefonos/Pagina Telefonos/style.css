@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container-navegador{
+    #selector{        
+        background-color: black;
+        color: white;
+        border: none;
+        outline: none;
+        font-size: 10px;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .compras{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 6px;
+        background-color: black;
+        color: white;
+        padding: 8px;
+        font-size: 10px;
+
+        .idiomas, .monedas, .compace, .carrito{
+            display: grid;
+            justify-content: center;
+            width: 80px;
+            font-size: 10px;
+            #selector{
+                background-color: black;
+                color: white;
+                border: none;
+                outline: none;
+                font-size: 10px;
+            }
+        }
+        .textoCompras{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 10px;
+            width: 250px;
+            text-align: center;
+        }
+        .carrito{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            width: 80px;
+            img{
+                width: 16px;
+            }
+        }
+        .separadorResponsivo{
+            width: 1px;
+            height: 10px;
+            background-color: white;
+        }
+    }
+    hr{
+        background-color: rgb(97, 97, 97);
+    }
+    .navegador{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: black;
+        color: white;
+        padding: 8px;
+        font-size: 10px;
+        gap: 10px;
+
+        .logo{
+            display: flex;
+            justify-content: center;
+            place-items: center;
+            width: 150px;
+            p{
+                padding: 2px;
+                color: black;
+                background-color: yellow;
+                border-radius: 30px;
+                font-size: 12px;
+            }
+        }
+        .infoAparatos{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            row-gap: 10px;
+        }
+        .buscador{
+            display: flex;
+            gap: 50px;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 30px;
+            background-color: white;
+            color: black;
+            padding: 5px
+            10px;
+            width: 250px;
+        
+            p{
+                font-size: 9px;
+            }
+            img{
+                width: 10px;
+            }
+        }
+    }
+}
+
+#container-slider{
+    .slider{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0 0;
+        margin-bottom: 20px;
+        background-color: rgb(183, 175, 255);
+        
+        row-gap: 30px;
+        .galaxyS13{
+            display: grid;
+            row-gap: 10px;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            h4{
+                width: 20ch;
+            }
+            p{
+                font-size: 10px;
+            }
+            .link{
+                button{
+                    border: none;
+                    border-radius: 30px;
+                    background-color: blue;
+                    color: white;
+                    font-size: 5px;
+                    padding: 4px 7px;
+                }
+                a{
+                    font-size: 5px;
+                    color: black;
+                    margin-left: 10px;
+
+                }
+            }
+        }
+        img{
+            width: 280px;
+        }        
+    }
+}
+
+#container-articulos{
+    h3{
+        text-align: center;
+    }
+
+    hr{
+        margin: 10px 0px;
+    }
+
+    .articulos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 11px;
+        text-align: center;
+    }
+    .articulo{
+            img{
+                    width: 70px;
+                    height: 70px;
+                    padding: 8px;
+                    background-color: rgb(224, 224, 224);
+                }
+        }
+}
+
+#container-descuentoGeneral{
+    .container-descuentos{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0;
+
+        .productos{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            justify-content: center;
+            align-items: center;
+            height: 180px;
+            width: 280px;
+            border-radius: 4px;
+
+            .descuento{
+                width: 120px;
+                padding-left: 15px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+
+                .cantidad-descuento{
+                    display: inline-block;
+                    padding: 1px 2px;
+                    font-size: 7px;
+                    text-align: center;
+                    background-color: white;
+                    border: 0.5px solid rgb(235, 235, 235);
+                    border-radius: 3px;
+                }
+                h4{
+                    width: 15ch;
+                }
+                p{
+                    font-size: 8px;
+                }
+                button{
+                    border: none;
+                    border-radius: 30px;
+                    background-color: blue;
+                    color: white;
+                    font-size: 8px;
+                    padding: 4px 7px;
+                }
+                a{
+                    font-size: 8px;
+                    color: black;
+                }
+            }
+
+            .imagen-descuento{
+                display: flex;
+                justify-content: center;
+            }
+            img{
+                width: 90%;
+            }
+            #img1{
+                padding-top: 14px;
+                width: 80%;
+            }
+            #img3{
+                width: 100%;
+            }
+            #img6{
+                width: 100%;
+            }
+        }
+        #card1{
+                background-color: antiquewhite;
+            }
+        #card2{
+            background-color: pink;
+        }
+        #card3{
+            background-color: rgb(202, 202, 202);
+        }
+        #card4{
+            background-color: rgb(238, 238, 238);
+        }
+        #card5{
+            background-color: rgb(202, 202, 202);
+        }
+        #card6{
+            background-color: rgb(220, 204, 235);
+        }
+    }
+}
+
+#container-trending{
+    display: grid;
+    justify-content: center;
+    .trending{
+        display: inline-block;
+        background-color: #b1b1b1;
+        padding: 10px;
+        margin: 15px;
+        justify-content: center;
+        .navegador-trending{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding-bottom: 10px;
+            .navegador{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    border-bottom: 2px solid transparent;
+                }
+                a:hover {
+                    color: blue;
+                    border-bottom: 2px solid blue;
+                    padding-bottom: 5px;
+                }
+            }
+            button{
+                    border: none;
+                    border-radius: 100%;
+                    padding: 3px 6px;
+                }
+        }
+        .productos-trending{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+            .productos{
+                img{
+                width: 85px;
+                padding: 8px;
+                background-color: rgb(224, 224, 224);
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1000px) and (max-width: 1880px) {
+    #container-navegador{
+        .compras{
+            .textoCompras{
+                width: 600px;
+            }
+            .separador{
+                width: 1px;
+                height: 10px;
+                background-color: white;
+            }
+        }
+        .navegador{
+            gap: 60px;
+            justify-content: space-around;
+            .logo{
+                justify-content: start;
+                width: 100px;
+            }
+            .infoAparatos{
+                justify-content: space-;
+            }
+        }
+    }
+}
+@media (min-width: 600px) and (max-width: 1400px) {
+    #container-articulos{
+        h3{
+            padding-left: 10px;
+            text-align: start;
+        }
+    }
+}

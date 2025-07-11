@@ -1,0 +1,198 @@
+:root {
+    --color-primario: #0d6efd;
+    --color-secundario: #198754;
+    --color-terciario: #6f42c1;
+    --color-fondo: #f8f9fa;
+    --color-texto: #212529;
+    --color-advertencia: #fd7e14;
+    --color-peligro: #dc3545;
+    --degradado-primario: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%);
+    --degradado-secundario: linear-gradient(135deg, #198754 0%, #157347 100%);
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+/* Tarjetas de datos */
+.tarjeta-datos {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta-datos:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.15);
+    border-color: var(--color-primario);
+}
+
+.tarjeta-datos h3 {
+    color: var(--color-primario);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--color-primario);
+}
+
+.valor-dato {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--color-secundario);
+    line-height: 1;
+    margin: 0.5rem 0;
+}
+
+.unidad-dato {
+    font-size: 1.1rem;
+    color: var(--color-texto);
+    opacity: 0.8;
+    margin-left: 0.5rem;
+}
+
+/* Secciones */
+.seccion-contenedor {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Puntos */
+.contenedor-puntos {
+    background: var(--degradado-secundario);
+    color: white;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
+}
+
+.contenedor-puntos h3 {
+    color: white;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.contenedor-puntos .valor-dato {
+    color: white;
+    font-size: 2.5rem;
+}
+
+/* Recordatorios */
+.recordatorio {
+    background-color: #fff3cd;
+    border-left: 5px solid #ffc107;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.recordatorio h4 {
+    color: #856404;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Botones */
+.btn-pausa {
+    background: var(--degradado-secundario);
+    color: white;
+    font-weight: 600;
+    transition: all 0.2s;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+}
+
+.btn-pausa:hover {
+    background: linear-gradient(135deg, #157347 0%, #13653f 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.15);
+    color: white;
+}
+
+.btn-outline-primary {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Hora actual */
+.hora-actual {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-primario);
+}
+
+/* Barra de navegación */
+.navbar {
+    padding: 1rem 2rem;
+    background: var(--degradado-primario) !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    padding: 0.5rem 1rem !important;
+}
+
+/* Progress bars */
+.progress-bar-striped {
+    background-image: linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.15) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.15) 50%,
+        rgba(255, 255, 255, 0.15) 75%,
+        transparent 75%,
+        transparent
+    );
+    background-size: 1rem 1rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .valor-dato {
+        font-size: 1.75rem;
+    }
+    
+    .seccion-contenedor {
+        padding: 1.5rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .valor-dato {
+        font-size: 1.5rem;
+    }
+    
+    .seccion-contenedor {
+        padding: 1.25rem;
+    }
+    
+    body {
+        padding-bottom: 60px;
+    }
+}
